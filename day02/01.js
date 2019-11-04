@@ -1,0 +1,6 @@
+var queryString=require("querystring")
+// var obj=queryString.parse("name=tom&age=12")
+// var obj=queryString.stringify({ name: 'tom', age: '12' })
+// var obj =queryString.escape("name=汤姆")
+var obj=queryString.unescape("name%3D%E6%B1%A4%E5%A7%86")
+console.log(obj)

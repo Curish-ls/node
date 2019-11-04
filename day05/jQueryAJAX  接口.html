@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="../../JQuery   10.23/JQuery/jquery-3.2.1.min.js"></script>
+    <script>
+
+        $.ajax({
+            type: "get",
+            url: "http://localhost:3000/code",
+            async: true,
+            dataType: "json",
+            success: function (data) {
+                console.log(data)
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        });
+    </script>
+</body>
+
+</html>
